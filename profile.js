@@ -1,11 +1,11 @@
 //-------------------------------------------
-//클릭해서 사진 파일 추가하기
+// 클릭해서 사진 파일 추가하기
 function triggerFileInput() {
   const fileInput = document.getElementById("fileInput");
   fileInput.click();
 }
 
-//프로필 사진 변경하기
+// 프로필 사진 변경하기
 function changeProfileImage() {
   const fileInput = document.getElementById("fileInput");
   const profileImage = document.getElementById("profileImage");
@@ -19,8 +19,8 @@ function changeProfileImage() {
   }
 }
 
-//프로필 닉네임
-function changeProfileName() {
+// 프로필 닉네임 변경하기
+ function changeProfileName() {
   const nameInput = document.getElementById("nameInput");
   const profileName = document.getElementById("profileName");
   const saveProfileButton = document.getElementById("saveProfile");
@@ -34,7 +34,7 @@ function changeProfileName() {
   }
 }
 
-//프로필 폼 닫기
+// 프로필 폼 닫기
 function toggleModal(id) {
   document.getElementById(id).classList.toggle("on");
 }
@@ -50,8 +50,8 @@ function saveProfile() {
   toggleModal();
 }
 
-//비밀번호 확인 검사
-function checkPassword() {
+// 비밀번호 확인 검사
+ function checkPassword() {
   const passwordInput = document.getElementById("passwordInput");
   const confirmPasswordInput = document.getElementById("confirmPasswordInput");
   const passwordWarning = document.getElementById("passwordWarning");
