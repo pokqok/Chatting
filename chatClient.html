@@ -27,6 +27,9 @@
       <button id="btnCreateRoom" onclick="toggleModal('modalCreateRoom')">
         방 생성
       </button>
+      <button id="btnCreateRoom" onclick="toggleModal('modalCreateBigRoom')">
+        큰 방 생성
+      </button>
       <div id="settingButton">⚙️</div>
     </div>
   </div>
@@ -173,3 +176,34 @@
     </div>
   </div>
 </div>
+<!--큰 방 생성 폼 보여주기 --------------------->
+<div class="modalConcept modalProfile" id="modalCreateBigRoom">
+  <div class="modal-dialog" role="document">
+      <div class="modalContent">
+
+          <div id="roomInsert">
+              <form id="roomInsertForm">
+                  <input 
+                    id="roomInput" 
+                    type="text" 
+                    name="room_name" 
+                    placeholder="최대 5글자 입력" 
+                    minlength="1">
+                  <input 
+                    id="roomSubmit" 
+                    type="submit" 
+                    value="큰 방 생성">
+              </form>
+          </div>
+          
+          <button 
+            type="button" 
+            class="btn btn-danger" 
+            onclick="toggleModal('modalCreateBigRoom')"
+            >
+            닫기
+          </button>
+      </div>
+  </div>
+</div>
+<!--큰 방 생성 폼 끝 --------------------->
